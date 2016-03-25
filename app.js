@@ -10,15 +10,12 @@ window.onload = function() {
 	
 	window.setInterval(function(){
 		var newElement = document.createElement("H1");
-<<<<<<< HEAD
 		var randomChance = Math.random() *100;
-=======
-		var randomChance = Math.random*100;
->>>>>>> 3885e85151816ffbda465b26b1bd8abe66a4b957
-		if(randomChance<2 && randomChance>10){
-			newElement.innerHTML = "why do i have no friends???";
+		if(randomChance>2 && randomChance<10){
+			newElement.innerHTML = "why does no one love me;"
 		} else if (randomChance < 15){
 			newElement.innerHTML = "fuck normies";
+			newElement.style.color = "red";
 		} else {
 			newElement.innerHTML = "end my life";
 		}
