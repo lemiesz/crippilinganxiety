@@ -1,5 +1,7 @@
 .main {
+	display: flex;
 	background: black;
+	align-items: center;
 }
 
 .sadText {
