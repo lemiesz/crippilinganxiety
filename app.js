@@ -11,13 +11,17 @@ window.onload = function() {
 	window.setInterval(function(){
 		var newElement = document.createElement("H1");
 		var randomChance = Math.random() *100;
-		if(randomChance>2 && randomChance<10){
+		if(randomChance === 1) {
+			newElement.innerHTML = "Bernice Sander loves cream pies"
+		} else if(randomChance>2 && randomChance<10){
 			newElement.innerHTML = "why does no one love me;"
 		} else if (randomChance < 15){
 			newElement.innerHTML = "fuck normies";
 			newElement.style.color = "red";
-		} else {
+		} else if(randomChance < 30 && randomChance >=25) {
 			newElement.innerHTML = "end my life";
+		} else {
+			newElement.innerHTML = "good vibes only";
 		}
 		newElement.className = "sadText";
 		newElement.style.position = "absolute";
